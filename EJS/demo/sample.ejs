@@ -1,0 +1,15 @@
+<body>
+    <h1>
+        Hey! It's <%= whichday %>, it's time to <%= whichevent%>
+    </h1>
+
+    <% if (locals.fruitsarray) { %>
+        <ul>
+            <% fruitsarray.forEach((fruit) => { %>
+                <li>
+                    <%= fruit %>
+                </li>
+            <% }) %>
+        </ul>
+    <% } %>
+</body>
